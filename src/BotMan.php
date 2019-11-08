@@ -424,7 +424,7 @@ class BotMan
                     /*
                      * If the driver has a  "messagesHandled" method, call it.
                      * This method can be used to trigger driver methods
-                     * once the messages are handles.
+                     * once the messages are handles and return the json.
                      */
                     if (method_exists($this->getDriver(), 'messagesHandled')) {
                         return $this->getDriver()->messagesHandled();
